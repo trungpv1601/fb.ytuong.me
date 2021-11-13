@@ -183,7 +183,7 @@ export default function HomePage() {
                 <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
                   <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                     <img
-                      className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full "
                       src="https://res.cloudinary.com/vk1ng/image/upload/v1636791448/ytuong/2_zxyh1n.png"
                       alt=""
                     />
