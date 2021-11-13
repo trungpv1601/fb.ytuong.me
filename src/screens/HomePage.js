@@ -196,7 +196,7 @@ export default function HomePage() {
           {/* Feature section with screenshot */}
           <div className="relative pt-16 bg-gray-50">
             <div className="max-w-md px-4 mx-auto text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-              <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+              <div className="-mb-2 ">
                 <img
                   className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
                   src="https://res.cloudinary.com/vk1ng/image/upload/v1636791448/ytuong/3_aezwkb.png"
