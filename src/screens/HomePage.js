@@ -169,7 +169,7 @@ export default function HomePage() {
                     <div className="flex justify-center col-span-1 mt-4 md:col-span-2 lg:col-span-1">
                       <a
                         href="https://chrome.google.com/webstore/detail/save-my-time-extension/kopgookbfibohjgejadkhnndfemajbec"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         <img
                           className="h-12"
