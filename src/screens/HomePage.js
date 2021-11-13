@@ -139,22 +139,6 @@ export default function HomePage() {
                       </a>
                     ))}
                   </div>
-                  <div className="px-5 mt-6">
-                    <a
-                      href="/"
-                      className="block w-full px-4 py-3 font-medium text-center text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
-                    >
-                      Start free trial
-                    </a>
-                  </div>
-                  <div className="px-5 mt-6">
-                    <p className="text-base font-medium text-center text-gray-500">
-                      Existing customer?{" "}
-                      <a href="/" className="text-gray-900 hover:underline">
-                        Login
-                      </a>
-                    </p>
-                  </div>
                 </div>
               </div>
             </Popover.Panel>
@@ -164,8 +148,8 @@ export default function HomePage() {
           <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-                <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-                  <div className="lg:py-24">
+                <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:flex-col">
+                  <div className="lg:py-20">
                     <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl">
                       <span className="block">
                         The Extension Allow to Saves your time on Socical,{" "}
@@ -177,6 +161,23 @@ export default function HomePage() {
                     <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
                       Auto collect & save ads, Posts on your facebook news feed
                     </p>
+                  </div>
+                  <div className="w-full ">
+                    <label className="block text-base font-bold text-center text-gray-300">
+                      Download
+                    </label>
+                    <div className="flex justify-center col-span-1 mt-4 md:col-span-2 lg:col-span-1">
+                      <a
+                        href="https://chrome.google.com/webstore/detail/save-my-time-extension/kopgookbfibohjgejadkhnndfemajbec"
+                        target="_blank"
+                      >
+                        <img
+                          className="h-12"
+                          src="https://res.cloudinary.com/vk1ng/image/upload/v1621681623/ytuong/chrome_1chrome_n2sxxg.png"
+                          alt="Chrome Extention"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
@@ -239,7 +240,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-
         </main>
         <footer className="bg-gray-50" aria-labelledby="footer-heading">
           <div className="max-w-md px-4 pt-12 mx-auto sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
