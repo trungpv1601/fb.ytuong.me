@@ -1,42 +1,15 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  CogIcon,
-  MenuIcon,
-  RefreshIcon,
-  ServerIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import ScrollToTopOnMount from "../ScrollToTopOnMount";
 
 const navigation = [
-  { name: "Features", href: "#features" },
+  { name: "Features", href: "/" },
   { name: "Blog", href: "https://blog.ytuong.me/" },
   // {
   //   name: "Facebook Group",
   //   href: "https://www.facebook.com/groups/552601465720500",
   // },
-];
-const features = [
-  {
-    name: "Automatic collect",
-    description:
-      "Save Your Time will collect ads / Posts autonomously while you're using facebook.",
-    icon: RefreshIcon,
-  },
-  {
-    name: "Filter ads / Post by Reactions",
-    description:
-      "To catch Posts quickly, SAVE MY TIMES allows you to filter your facebook news/watch feed to show sponsored posts, group Post, Fan page posts, newfeed posts",
-    icon: CogIcon,
-  },
-  {
-    name: "Save and organize",
-    description:
-      "You can easily track, sort posts by reactions, and store them in the local area of ​​the Extension easily",
-    icon: ServerIcon,
-  },
 ];
 
 const footerNavigation = {
@@ -58,13 +31,13 @@ const footerNavigation = {
   ],
 };
 
-export default function HomePage() {
+export default function PrivacyPage() {
   return (
     <div className="bg-white">
       <ScrollToTopOnMount />
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
-          <div className="pt-6 bg-gray-900">
+          <div className="py-6 bg-gray-900">
             <nav
               className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6"
               aria-label="Global"
@@ -148,97 +121,96 @@ export default function HomePage() {
           </Transition>
         </Popover>
         <main>
-          <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-            <div className="mx-auto max-w-7xl lg:px-8">
-              <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-                <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:flex-col">
-                  <div className="lg:py-20">
-                    <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl">
-                      <span className="block">
-                        The Extension Allow to Saves your time on Socical,{" "}
-                      </span>
-                      <span className="block pb-3 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
-                        Spy Your Compertitors Faster
-                      </span>
-                    </h1>
-                    <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                      Auto collect & save ads, Posts on your facebook news feed
-                    </p>
-                  </div>
-                  <div className="w-full ">
-                    <label className="block text-base font-bold text-center text-gray-300">
-                      Download
-                    </label>
-                    <div className="flex justify-center col-span-1 mt-4 md:col-span-2 lg:col-span-1">
-                      <a
-                        href="https://chrome.google.com/webstore/detail/save-my-time-extension/kopgookbfibohjgejadkhnndfemajbec"
-                        target="_blank" rel="noreferrer"
-                      >
-                        <img
-                          className="h-12"
-                          src="https://res.cloudinary.com/vk1ng/image/upload/v1621681623/ytuong/chrome_1chrome_n2sxxg.png"
-                          alt="Chrome Extention"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-                  <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                    <img
-                      className="w-full "
-                      src="https://res.cloudinary.com/vk1ng/image/upload/v1636791448/ytuong/2_zxyh1n.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <div className="py-16 bg-white ">
+              <div className="px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto text-lg ">
+                  <h1>
+                    <span className="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">
+                      Privacy Policy
+                    </span>
+                  </h1>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    This Privacy Policy governs how we, SAVE MY TIME EXTENSION,
+                    Inc. and its affiliates (“SAVE MY TIME EXTENSION”, “we”,
+                    “our” or “us”), use data that we collect and store in
+                    connection with your use of our browser extension SAVE MY
+                    TIME EXTENSION (the "Extension(s)").
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    The data that we collect in connection with our extension is
+                    automatically rendered anonymized and non-personal. We do
+                    not collect or store any of your personal data, nor do we
+                    ever monitor or track your personal activities.
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    This Privacy Policy may be updated from time to time and
+                    therefore we ask you to check back periodically for the
+                    latest version of the Privacy Policy.
+                  </p>
 
-          {/* Feature section with screenshot */}
-          <div className="relative pt-16 bg-gray-50">
-            <div className="max-w-md px-4 mx-auto text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-              <div className="-mb-2 ">
-                <img
-                  className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-                  src="https://res.cloudinary.com/vk1ng/image/upload/v1636791448/ytuong/3_aezwkb.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    1- The Data that We Collect and Process
+                  </p>
 
-          {/* Feature section with grid */}
-          <div id="features" className="relative py-16 bg-white sm:py-24 lg:py-32">
-            <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-              <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                FEARTURES
-              </p>
-              <div className="mt-12">
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                  {features.map((feature) => (
-                    <div key={feature.name} className="pt-6">
-                      <div className="flow-root px-6 pb-8 rounded-lg bg-gray-50">
-                        <div className="-mt-6">
-                          <div>
-                            <span className="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600">
-                              <feature.icon
-                                className="w-6 h-6 text-white"
-                                aria-hidden="true"
-                              />
-                            </span>
-                          </div>
-                          <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                            {feature.name}
-                          </h3>
-                          <p className="mt-5 text-base text-gray-500">
-                            {feature.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    We collect the following data:
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    (1)  Collection of Non-Personal. We collect data about
+                    sponsored campaigns, sponsored posts or advertisements that
+                    target you directly or that have been shared with you. We
+                    may complement these data with general demographic
+                    information like where you live (by region).
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    (2)  Location Data. We obtain certain location-based data in
+                    connection with your use of the extention, transmitted from
+                    your Facebook and your IP address. We use such
+                    location-based data only to determine high-level region,
+                    state and country level location data which we store and
+                    use. We never store or use your IP address or any other
+                    specific location-based data.
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    (3)  Children’s Privacy. We do not offer our browser
+                    extention for use by children. If you are under 18, you may
+                    not use the Save my time Extension, or provide us with any information
+                    without involvement of a parent or a guardian. We do not
+                    knowingly collect personal information from, and/or about
+                    children. If you believe that we might have any such
+                    personal information, please contact us
+                    at: <span className="text-gray-900 underline">ytuongdotme@gmail.com</span>
+                  </p>
+                  <p className="mt-8 text-xl leading-8 text-gray-500"></p>
+
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    2- Why We Collect and Process the Data
+                  </p>
+
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    We use these data to analyze how companies promote their
+                    products and services online and on social networks and to
+                    what groups of people (i.e. target groups). We provide our
+                    customers with data intelligence and insights into their
+                    advertising practices as well as those of their competitors.
+                    Therefore, the data we share with them is always aggregated
+                    and non-personal.
+                  </p>
+
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    If you object to these terms of services, please do not
+                    download or add the extention to your browser.
+                  </p>
+
+                  <p className="mt-8 text-xl leading-8 text-gray-500">
+                    For more information or for exercising your rights, please
+                    contact us at <span className="text-gray-900 underline">ytuongdotme@gmail.com</span>. Subject to legal and
+                    other permissible considerations, we will make every
+                    reasonable effort to honor your request promptly or inform
+                    you if we require further information in order to fulfil
+                    your request.
+                  </p>
                 </div>
               </div>
             </div>
@@ -285,12 +257,12 @@ export default function HomePage() {
                     <ul className="mt-4 space-y-4">
                       {footerNavigation.legal.map((item) => (
                         <li key={item.name}>
-                          <Link
-                            to={item.href}
+                          <a
+                            href={item.href}
                             className="text-base text-gray-500 hover:text-gray-900"
                           >
                             {item.name}
-                          </Link>
+                          </a>
                         </li>
                       ))}
                     </ul>
